@@ -7,7 +7,7 @@ HC=ghc $(HCFLAGS)
 OBJS=mainc.o MainSDL.o
 
 $(PROGNAME): $(OBJS)
-	$(HC) -no-hs-main $(OBJS) -o $@ -package SDL -package vector -package JuicyPixels
+	$(HC) -no-hs-main $(OBJS) -o $@ -package SDL -package vector -package JuicyPixels -package old-time
 
 show: main
 	./main
